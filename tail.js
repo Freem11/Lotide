@@ -10,9 +10,9 @@ const assertEqual = function(actual, expected) {
 };
 
 const tail = function(words) {
-  return words.slice(1);
+  return words.slice(1).length;
 };
 
 const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words);
-assertEqual(words.length, 3);
+const actual = (tail(words));
+assertEqual(actual, 2);
