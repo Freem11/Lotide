@@ -1,13 +1,13 @@
 
-
+const assertEqual = require('./assertEqual');
 const eqArrays = require('./eqArrays');
 
 const assertArraysEqual = function(actual, expected) {
 
   if (eqArrays.eqArrays(actual, expected)) {
-  console.log("✅✅✅ Assertion Passed: " ,actual, " === " ,expected);
+  //console.log("✅✅✅ Assertion Passed: " ,actual, " === " ,expected);
 } else {
-  console.log("🔴🔴🔴 Assertion Failed: " ,actual, " !== " ,expected);
+  //console.log("🔴🔴🔴 Assertion Failed: " ,actual, " !== " ,expected);
 }
 
 };
