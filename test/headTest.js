@@ -1,7 +1,12 @@
 
+const assert = require('chai').assert;
+const head   = require('../head');
 
-const head = require('../head');
-
-// TEST CODE
-console.log(head.assertEqual(head.head([5,6,7]), 5));
-console.log(head.assertEqual(head.head(["Hello", "Lighthouse", "Labs"]), "Hello"));
+describe("#head", () => {
+  it("returns 'Hello' for ['Hello', 'Lighthouse', 'Labs]", () => {
+    assert.strictEqual(head.head(['Hello', 'Lighthouse', 'Labs']), 'Hello');
+  });
+  it("returns '5' for ['5','6','7,]", () => {
+    assert.strictEqual(head.head([5, 6, 7]), 5); 
+  });
+});
